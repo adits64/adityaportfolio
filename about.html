@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Aditya</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      line-height: 1.6;
+    }
+
+    /* Header Section */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background-color: #007bff;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo img {
+      max-height: 50px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center; /* Center navigation on all screen sizes */
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0 15px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+      transform: scale(1.1);
+    }
+
+    /* About Section */
+    .about {
+      padding: 60px 30px;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .about h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 36px;
+      color: #343a40;
+      margin-bottom: 20px;
+    }
+
+    .about img {
+      border-radius: 50%;
+      max-width: 200px;
+      margin-bottom: 30px;
+      border: 5px solid #eef0f3;
+      transition: transform 0.3s;
+    }
+
+    .about img:hover {
+      transform: scale(1.1);
+    }
+
+    .about p {
+      font-size: 18px;
+      color: #6c757d;
+      line-height: 1.8;
+    }
+
+    .about ul {
+      padding-left: 20px;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    .about ul li {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    /* Footer Section */
+    footer {
+      text-align: left;
+      padding: 30px;
+      background-color: #343a40;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ffd700;
+      transform: scale(1.1);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      nav {
+        justify-content: center; /* Center the nav bar in smaller screens */
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+        width: 100%;
+      }
+
+      nav ul li a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .about {
+        padding: 30px 20px;
+      }
+
+      .logo img {
+        max-height: 40px;
+      }
+
+      footer {
+        text-align: center;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .about h1 {
+        font-size: 28px;
+      }
+
+      .social-icons a {
+        font-size: 16px;
+        margin: 5px;
+      }
+    }
+
+    /* Landscape Mode Fix */
+    @media (max-width: 1024px) and (min-width: 768px) {
+      nav ul {
+        flex-direction: row;
+        justify-content: center; /* Center the items in landscape mode */
+        padding: 0;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <!-- <img src="images/logo.png" alt="Aditya Logo"> -->
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <img src="image/adi2.jpg" alt="Aditya's Photo">
+    <h1>About Me</h1>
+    <p>Hello, I'm Aditya. I specialize in providing high-quality services as a freelancer, with a focus on <strong>data entry</strong>, <strong>virtual assistance</strong>, <strong>transcription</strong>, <strong>annotations</strong>, and <strong>graphic design</strong>. My passion for precision and my dedication to delivering results on time make me a reliable partner for your projects.</p>
+
+    <h2>Education</h2>
+    <p>I hold a Bachelor's degree in Computer Applications, which has equipped me with strong technical and analytical skills. This foundation helps me tackle complex tasks with efficiency and accuracy.</p>
+
+    <h2>Mission</h2>
+    <p>My mission is simple: to offer reliable, high-quality freelance services that help businesses achieve their objectives effectively and efficiently.</p>
+
+    <h2>Skills and Expertise</h2>
+    <ul>
+      <li>Fast Typing & Data Entry</li>
+      <li>Document Conversion (Word to PDF)</li>
+      <li>Spreadsheet & Excel Work</li>
+      <li>Transcription & Annotation</li>
+      <li>Graphic Design</li>
+      <li>Translation (English to Nepali and Nepali to English)</li>
+      <li>Lead Generation</li>
+      <li>Proofreading & Editing</li>
+      <li>Data Cleaning & Formatting</li>
+      <li>Database Management</li>
+      <li>Document Scanning & Digitization</li>
+      <li>Data Validation & Quality Control</li>
+      <li>Research & Data Collection</li>
+      <li>Coding & Script Automation</li>
+    </ul>
+
+    <h2>Experience</h2>
+    <p>With over five years of experience in the freelancing industry, I’ve had the privilege of working with clients from diverse industries, refining my skills and delivering high-quality results on platforms like Upwork.</p>
+
+    <h2>Why Work With Me?</h2>
+    <p>When you work with me, you can expect:</p>
+    <ul>
+      <li>On-time delivery</li>
+      <li>Clear and continuous communication</li>
+      <li>Customized solutions for your specific needs</li>
+      <li>Multiple revisions to ensure top-quality work</li>
+    </ul>
+
+    <h2>Let's Connect!</h2>
+    <p>Feel free to <a href="mailto:adits.rok.64@gmail.com">contact me via email</a> or visit my <a href="https://www.upwork.com/freelancers/adits92" target="_blank">Upwork profile</a> to discuss how I can assist you with your next project.</p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 Aditya. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="mailto:adits.rok.64@gmail.com">Email</a>
+      <a href="https://www.upwork.com/freelancers/adits92">Upwork</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Aditya</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      line-height: 1.6;
+    }
+
+    /* Header Section */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background-color: #007bff;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0 15px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+      transform: scale(1.1);
+    }
+
+    /* Portfolio Section */
+    .portfolio {
+      padding: 60px 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .portfolio h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 36px;
+      color: #343a40;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .portfolio-category {
+      margin-bottom: 40px;
+    }
+
+    .portfolio-category h2 {
+      font-size: 28px;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .portfolio-item {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .portfolio-item .content {
+      padding: 20px;
+    }
+
+    .portfolio-item h3 {
+      font-size: 22px;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-item p {
+      font-size: 16px;
+      color: #6c757d;
+      line-height: 1.8;
+    }
+
+    .portfolio-item a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .portfolio-item a:hover {
+      color: #ffd700;
+    }
+
+    /* Footer Section */
+    footer {
+      text-align: left;
+      padding: 30px;
+      background-color: #121213;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: rgb(250, 246, 246);
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ffd700;
+      transform: scale(1.1);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header {
+        flex-wrap: wrap;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .portfolio {
+        padding: 30px 20px;
+      }
+
+      footer {
+        text-align: center;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <!-- <img src="images/logo.png" alt="Aditya Logo"> -->
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+    <h1>My Portfolio</h1>
+
+    <!-- Projects with Upwork Clients -->
+    <div class="portfolio-category">
+      <h2>Projects with Upwork Clients</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <!-- <img src="images/worksheet1.jpg" alt="Upwork Project 1"> -->
+          <div class="content">
+            <h3>"Data Entry and research"</h3>
+            <p>Accurate data entry in worksheet, ensuring timely and error-free delivery of reports.</p>
+            <a href="https://www.upwork.com/freelancers/adits92" target="_blank">View Details</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <!-- <img src="images/w2.jpg" src="image/w3" alt="Upwork Project 2"> -->
+          <div class="content">
+            <h3>"Need someone with good research skills urgently to verify existing data"</h3>
+            <p>Sucessfully entering data to worksheet by researching from several websites. completed work on time and recieve 5 star review.</p>
+            <a href="https://www.upwork.com/freelancers/adits92" target="_blank">View Details</a>
+          </div>
+        </div>
+        <!-- <div class="portfolio-item">
+            <!-- <img src="images/upwork2.jpg" alt="Upwork Project 3"> -->
+            <!-- <div class="content">
+              <h3>"Need someone with good research skills urgently to verify existing data"</h3>
+              <p>Sucessfully entering data to worksheet by researching from several websites. completed work on time and recieve 5 star review.</p>
+              <a href="https://www.upwork.com/freelancers/adits92" target="_blank">View Details</a>
+            </div> -->
+          <!-- </div>  -->
+          <div class="portfolio-item">
+            <!-- <img src="images/nonupwork1.jpg" alt="Non-Upwork Project 1"> -->
+            <div class="content">
+              <h3>In progress: "Image Annotation":- Manual passport verification.</h3>
+              <p>Annotated image for more than 300+ hrs, with accuracy for the satisfactio fo clients and completing job on time.</p>
+              <a href="https://www.upwork.com/freelancers/adits92" target="_blank">View Details</a>
+            </div>
+      </div>
+    </div>
+
+    <!-- Projects with Non-Upwork Clients
+    <div class="portfolio-category">
+      <h2>Projects with Non-Upwork Clients</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="images/nonupwork1.jpg" alt="Non-Upwork Project 1">
+          <div class="content">
+            <h3>Annotation for Machine Learning</h3>
+            <p>Annotated datasets to train AI models for image recognition tasks, improving accuracy.</p>
+            <a href="#" target="_blank">View Details</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="images/nonupwork2.jpg" alt="Non-Upwork Project 2">
+          <div class="content">
+            <h3>Translation (English to Nepali)</h3>
+            <p>Translated a series of educational documents from English to Nepali for a local NGO.</p>
+            <a href="#" target="_blank">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 Aditya. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="mailto:adits.rok.64@gmail.com">Email</a>
+      <a href="https://www.upwork.com/freelancers/adits92">Upwork</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
